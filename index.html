@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #060404;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 0ch;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin: 5px;
+    color: #f6f6f6;
+
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    color: #000000; /* Cambia el color del texto a negro cuando el campo está en foco */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #186bc3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+#redirectPage {
+        background-color: rgb(0, 0, 0); /* Fondo blanco */
+    }
+
+    p {
+        color: rgb(255, 255, 255); /* Cambia el color del texto a rojo en los títulos y párrafos */
+    }
+
+    </style>
+</head>
+<body>
+    <div id="loginPage">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        
+    </div>
+
+    <div id="redirectPage" style="display: none;">
+        <h1>Bienvenida, MI AMOR </h1>
+        <p>
+            No puedo evitar tomar un momento para expresar lo afortunado que me siento de tenerte en mi vida. Eres la luz que ilumina mis días y la razón por la que mi corazón late con felicidad. Cada día que pasa, mi amor por ti crece aún más, y siento una gratitud infinita por tenerte a mi lado. 
+
+        </p>
+        <p>
+            Tu amor y apoyo incondicionales han sido un regalo invaluable en mi vida. Tú eres mi refugio en los momentos difíciles y mi compañía en los momentos felices. Juntos, hemos compartido risas, lágrimas, sueños y logros, y no puedo esperar para continuar construyendo un futuro hermoso a tu lado. 
+
+        </p>
+        <p>
+            Quiero q sepas flaca que en todo momento voy a estar contigo y que hare todo para hacerte feliz y no decepcionarte, llegaremos a más en un futuro y si tendremos a esa linda bb que queremos, estoy aquí para ti en cada paso del camino, sin importar lo que enfrentemos juntos, eres mi confidente, el amor de mi vida la más hermosa q tengo en el mundo, quería decirte todo esto y gracias .
+        </p>
+        <p>
+            TE AMO CON TODO MI CORAZÓN SOLECITA ❤️ Nunca olvidare la fecha en la que nos conocimos …. Por siempre tú y yo. ❤️ 13/05/23❤️
+        </p>
+
+        <img src="https://scontent.cdninstagram.com/v/t1.15752-9/371523374_3653149884921982_7761724678826033169_n.jpg?stp=dst-jpg_s403x403&_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_ohc=r1pda6uBOqoAX-w1z9K&_nc_ht=scontent.cdninstagram.com&oh=03_AdRXQ0Qc2dCrwIQMg1lQl8yqCw7HmRjl4v7H_WpMbA6a4g&oe=656A075D" alt="">
+
+        <style>
+            #loginPage{
+                background: black
+            }
+            
+
+        h1{
+            color: red;
+        }
+
+   
+
+       
+       
+    
+
+    
+        </style>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verifica las credenciales (esto es solo un ejemplo, debes implementar la autenticación real)
+        if (username === 'Hashi' && password === 'xdd') {
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('redirectPage').style.display = 'block';
+}
+ {
+            alert('Credenciales correctas, ¡PRESIONA ACEPTAR!');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
